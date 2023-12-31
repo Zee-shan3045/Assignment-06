@@ -1,0 +1,24 @@
+﻿@model Order
+<h1>Activity 6</h1>
+
+<h2>Order</h2>
+
+<table border="1">
+    <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+    </tr>
+
+    @foreach(var p in Model.Products)
+    {
+        <tr>
+            <td>@p.ProductName</td>
+            <td>@p.Price</td>
+        </tr>
+    }
+
+    <tr>
+        <td><b>Total</b></td>
+        <td><b>@Model.Total</b></td>
+    </tr>
+</table>

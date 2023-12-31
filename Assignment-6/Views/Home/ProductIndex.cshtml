@@ -1,0 +1,28 @@
+﻿@model List<Assignment06.Models.Product>
+
+<div>
+    <ul>
+        @foreach (var product in Model)
+        {
+            <li>@product.ProductName</li>
+        }
+    </ul>
+</div>
+
+<!--<div>
+    <h3>Order</h3>
+    <table border="1">
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+        </tr>
+
+       @* @foreach (var p in Model.products)
+        {
+            <tr>
+                <td>@p.ProductName</td>
+                <td>@p.Price</td>
+            </tr>
+        }*@
+    </table>
+</div>-->
